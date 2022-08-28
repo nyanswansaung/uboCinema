@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Crimson+Text:wght@700&display=swap');
+
+/* font-family: 'Cinzel', serif;
+font-family: 'Crimson Text', serif; */
+
+:root{
+    --main-color: #35356c;
+    --text-color: #00a7e9 ;
+    --default-color: #fff;
+    --box-color: #69254c;
+    --card-color: #cf9ea5;
+    --logo-color: #f9d643;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+    background-color: var(--main-color);
+    color: var(--default-color);
+}
+
+/* header start  */
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 95%;
+    margin: auto;
+    padding: 0.5rem;
+    background-color: #ffffff00;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo .bx{
+    color: var(--logo-color);
+    font-size: 1.3rem;
+    margin-right: 3px;
+}
+.logo a{
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.menu a{
+    position: relative;
+    text-transform: capitalize;
+    width: 50px;
+    margin: 0 17px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.menu a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    bottom: -2px;
+    left: 0;
+    border-bottom: 2px solid var(--logo-color);
+    transition: 0.5s;
+}
+.menu a:hover::after{
+    width: 100%;
+}   
+
+/* header end  */
+
+/* btn  */
+.btn{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 15px;
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid var(--default-color);
+    background-color: var(--card-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover{
+    border: 2px solid var(--logo-color);
+}
+
+/* btn end  */
+
