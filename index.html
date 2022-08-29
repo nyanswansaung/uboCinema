@@ -23,22 +23,23 @@
 
             <!-- menu -->
             <ul class="menu">
-                <li><a href="#">home</a></li>
-                <li><a href="#">menu</a></li>
-                <li><a href="#">collection</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#collection">menu</a></li>
+                <li><a href="#collection">collection</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
 
              <!-- sing_in -->
             <div class="sign_in">
-                <button type="button" class="btn">sign in</button>
+                <button type="button" class="btn">log in</button>
+                <button type="button" class="btn">sign up</button>
             </div>
         </div>
     </header>
     <!-- nav bar end -->
 
     <!-- body cover start  -->
-    <section class="home ">
+    <section class="home" id="home">
         <div class="body">
             <img src="./img/top-10/06.jpg" alt="">
         
@@ -54,8 +55,8 @@
     <!--body cover start   -->
     <hr>
     <!-- selection start  -->
-    <section class="selection container">
-        <h3>top 10 series</h3>
+    <section class="selection container" id="collection">
+        <h3 >top 10 series</h3>
         <div class="movie-cards">
             <div class="card">
                 <div class="box">
@@ -140,5 +141,34 @@
         </div>
     </section>
     <!-- selection end -->
+    <hr><hr>
+
+    <!-- sign in start -->
+    <h2 class="warn" id="contact">Please login to contact us.</h2>
+    <section class="login">
+        <h1>Log-in</h1>
+        <div class="email">
+            <input type="email" name="email" id="" placeholder="Email">
+        </div>
+        <div class="password">
+            <input type="password" name="pass" id="" placeholder="Password">
+        </div>
+        <div class="confirm">
+            <input type="checkbox" name="confirm" id="confirm">
+            <label for="confirm">remember me</label>
+        </div>
+        <div class="log-in">
+            <button type="button" class="btn">cancel</button>
+            <button type="button" class="btn">Login</button>
+        </div>
+    </section>
+    <!-- sign in end  -->
+    <hr><hr>
+
+    <!-- footer  -->
+    <footer>
+        <h4>This is my practice website <span>crd</span> to all ref webs.</h4>
+    </footer>
+    <hr><hr>
 </body>
 </html>
